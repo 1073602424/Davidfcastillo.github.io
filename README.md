@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Acompañamiento Jurídico | David Castillo</title>
 
   <style>
@@ -22,95 +23,120 @@
     header {
       background: #17243a;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 35px 20px;
     }
 
     header h1 {
-      font-size: 28px;
+      font-size: 23px;
       margin-bottom: 8px;
     }
 
     header p {
-      color: #d9dee7;
+      font-size: 16px;
+      margin: 0;
     }
 
     .hero {
       background: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 65px 20px;
     }
 
     .hero h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
+      font-size: 28px;
       color: #17243a;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      max-width: 700px;
-      margin: auto;
-      color: #555;
+      max-width: 750px;
+      margin: 0 auto 25px;
       font-size: 18px;
+      color: #555;
     }
 
     .boton {
       display: inline-block;
-      margin-top: 25px;
-      padding: 14px 25px;
-      background: #b08d3c;
+      background: #c49a3a;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      padding: 14px 28px;
+      border-radius: 7px;
       font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .boton:hover {
+      opacity: 0.9;
     }
 
     section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 50px 20px;
+      padding: 55px 20px;
     }
 
-    section h2 {
+    section > h2 {
       text-align: center;
-      margin-bottom: 30px;
       color: #17243a;
+      margin-bottom: 35px;
+      font-size: 28px;
     }
 
     .servicios {
+      max-width: 900px;
+      margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: white;
       padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
     .card h3 {
       color: #17243a;
       margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: #555;
     }
 
     .como-funciona {
       background: #17243a;
       color: white;
-      max-width: none;
+    }
+
+    .como-funciona h2 {
+      color: white;
     }
 
     .pasos {
       max-width: 900px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
 
     .paso {
-      background: rgba(255,255,255,0.08);
-      margin: 12px 0;
-      padding: 18px;
-      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    .paso h3 {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .paso p {
+      color: #e5e5e5;
     }
 
     .contacto {
@@ -118,11 +144,23 @@
       text-align: center;
     }
 
+    .contacto p {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .aviso {
+      margin-top: 30px !important;
+      font-size: 14px;
+      color: #666;
+      max-width: 800px !important;
+    }
+
     footer {
       background: #111a2b;
       color: #ccd2dc;
       text-align: center;
-      padding: 30px 20px;
+      padding: 25px 20px;
       font-size: 14px;
     }
 
@@ -131,8 +169,16 @@
         font-size: 28px;
       }
 
-      header h1 {
-        font-size: 23px;
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 45px 18px;
+      }
+
+      section > h2 {
+        font-size: 26px;
       }
     }
   </style>
@@ -146,66 +192,61 @@
   </header>
 
   <div class="hero">
-    <h2>Soluciones jurídicas claras y organizadas</h2>
-
+    <h2>Apoyo jurídico-documental claro y organizado.</h2>
     <p>
-      Acompañamiento en la preparación y revisión de documentos,
-      análisis contractual y organización de información jurídica.
+      Apoyo en la elaboración, revisión y organización de documentos,
+      contratos y solicitudes, con un enfoque claro, ordenado y responsable.
     </p>
-
     <a class="boton" href="#contacto">Solicitar información</a>
   </div>
 
   <section>
     <h2>Nuestros servicios</h2>
-
     <div class="servicios">
-
       <div class="card">
         <h3>📄 Redacción de documentos</h3>
         <p>
-          Apoyo en la elaboración y organización de documentos
-          jurídicos y administrativos.
+          Apoyo en la elaboración y organización de documentos jurídicos y
+          administrativos, de acuerdo con la información suministrada.
         </p>
       </div>
-
       <div class="card">
         <h3>🔎 Revisión de contratos</h3>
         <p>
-          Revisión de cláusulas, obligaciones, plazos,
-          condiciones y posibles aspectos que requieren atención.
+          Apoyo en la lectura y organización de contratos, identificación de
+          cláusulas, obligaciones, plazos y condiciones que requieran especial
+          atención.
         </p>
       </div>
-
-      <div class="card">
+  <div class="card">
         <h3>📋 Derechos de petición</h3>
         <p>
-          Apoyo en la estructuración y redacción de solicitudes
-          dirigidas a entidades o particulares.
+          Apoyo en la estructuración y redacción de derechos de petición y
+          solicitudes dirigidas a entidades o particulares.
         </p>
       </div>
-
       <div class="card">
         <h3>📑 Análisis documental</h3>
         <p>
-          Organización de documentos y elaboración de observaciones
-          para facilitar la comprensión del caso.
+          Organización y revisión inicial de documentos para identificar
+          información relevante, inconsistencias y aspectos que requieran
+          atención.
         </p>
       </div>
-
       <div class="card">
         <h3>🤝 Acompañamiento</h3>
         <p>
-          Orientación inicial para identificar documentos,
-          información y pasos que pueden ser necesarios.
+          Orientación inicial para organizar la información, identificar los
+          documentos necesarios y definir los pasos que correspondan según el
+          caso.
         </p>
       </div>
-
       <div class="card">
-        <h3>✍️ Elaboración personalizada</h3>
+        <h3>📝 Elaboración personalizada</h3>
         <p>
-          Preparación de documentos de acuerdo con la información
-          y necesidades suministradas por el usuario.
+          Preparación y organización de documentos de acuerdo con la
+          información, características y necesidades suministradas por el
+          usuario.
         </p>
       </div>
 
@@ -213,28 +254,35 @@
   </section>
 
   <section class="como-funciona">
-    <h2 style="color:white;">¿Cómo funciona?</h2>
+    <h2>¿Cómo funciona?</h2>
 
-    <div class="pasos">
+  <div class="pasos">
 
-      <div class="paso">
-        <strong>1. Cuéntanos tu situación</strong>
-        <p>Explica brevemente qué necesitas.</p>
+  <div class="paso">
+        <h3>1. Cuéntanos tu situación</h3>
+        <p>
+          Explica brevemente qué documento, contrato o solicitud necesitas
+          preparar o revisar.
+        </p>
       </div>
-
       <div class="paso">
-        <strong>2. Revisamos la información</strong>
-        <p>Organizamos los documentos y datos suministrados.</p>
+        <h3>2. Revisamos la información</h3>
+        <p>
+          Organizamos los documentos y datos suministrados para identificar
+          la información necesaria.
+        </p>
       </div>
-
       <div class="paso">
-        <strong>3. Elaboramos o revisamos</strong>
-        <p>Trabajamos sobre el documento solicitado.</p>
+        <h3>3. Elaboramos o revisamos</h3>
+        <p>
+          Trabajamos sobre el documento solicitado dentro del alcance acordado.
+        </p>
       </div>
-
       <div class="paso">
-        <strong>4. Entregamos el resultado</strong>
-        <p>Recibes el documento y las observaciones correspondientes.</p>
+        <h3>4. Entregamos el resultado</h3>
+        <p>
+          Recibes el documento elaborado o las observaciones correspondientes.
+        </p>
       </div>
 
     </div>
@@ -242,20 +290,24 @@
 
   <section id="contacto" class="contacto">
     <h2>Solicitar información</h2>
-
     <p>
-      Para iniciar, puedes comunicarte y explicar brevemente
-      el documento o contrato que necesitas revisar.
+      Para iniciar, puedes comunicarte y explicar brevemente el documento
+      o contrato que necesitas preparar o revisar.
     </p>
-
-    <a class="boton" href="mailto:contacto@ejemplo.com">
+    <a
+      class="boton"
+      href="mailto:davidferchish2@gmail.com?subject=Solicitud%20de%20información%20jurídico-documental"
+    >
       Contactar
     </a>
-
-    <p style="margin-top:25px; font-size:14px; color:#666;">
-      La información publicada en esta página es de carácter
-      informativo. El alcance de cada servicio se determinará
-      según el caso concreto y las condiciones acordadas.
+    <p class="aviso">
+      Este sitio ofrece servicios de apoyo y acompañamiento
+      jurídico-documental dentro del alcance legalmente permitido.
+      La atención no constituye, por sí sola, representación judicial
+      ni sustituye la intervención de un abogado cuando esta sea
+      legalmente necesaria. Los asuntos que requieran representación
+      profesional serán remitidos o deberán ser atendidos por un
+      abogado habilitado, según corresponda.
     </p>
   </section>
 
